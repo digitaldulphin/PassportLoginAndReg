@@ -1,0 +1,14 @@
+{
+  "name": "passportloginandreg",
+  "version": "1.0.0",
+  "description": "Prototype for a passport login and registration.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
