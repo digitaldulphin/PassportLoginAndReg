@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="<%= route %>/App_Styles.css" rel="stylesheet" type="text/css"/> 
+</head>
+<body>
+	
+	<div class ="AppContainer"> 
+		<h1> Sign Up </h1> 			 
+		<div>
+		
+		<form method = "post" action="doSignUpplz/">
+			<div class="form-group">
+      <% if ( success_msg != '' ){%> <div class = "flashmsg myGreen" > <%= success_msg %> </div> <% } %>			
+			<% if ( error_msg != '' ){%> <div class = "flashmsg myRed" > <%= error_msg %> </div> <% } %>
+			<% if (error != '' ){%> <div class = "flashmsg Red"> <%= error %> </div> <% } %>
+				<br />
+				<label For = "Email"> Email </label>
+				<input type = "text" id="Email" name ="Email" autoFocus value ="" ></input>							
+			</div>		
+			<div class="form-group">
+				<br />    
+        
+				<label For ="Password"> Password </label>
+				<input type = "password" id="password" name = "password" maxlength = "20" ></input>
+        <p> Password must be strong, smaller than 20 characters, and larger then 1 character. <p>
+			</div>						
+			<p>By clicking any of the Sign Up buttons, 
+				I agree to the terms of service</p>
+		<input type = 'Submit' value = 'SIGN UP' readOnly></input>
+		</form>
+
+		  or
+
+		  <ul>
+		    <li><button>Login With Facebook</button></li>
+		    <li><button>Login With Linkedin</button></li>
+		    <li><button>Login With Google</button></li>
+		    <li><button>Login With Microsoft Account</button></li>
+		  </ul>
+	
+		</div>
+				
+		
+	</div>		 	
+</body>
+</html>

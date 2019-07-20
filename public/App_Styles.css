@@ -1,0 +1,27 @@
+body { background-color: rgb(179, 255, 217); color: black; font-family: "Arial", "Helvetica", "Comic Sans MS", "Comic Sans"; text-align: center; }
+.AppContainer { padding: 1em; display: block; margin-top: 10vh; margin-left: 1em; margin-right: 1em; margin-bottom: 5vh; max-width: 90vw;  background-color: white; border: 5px solid black; border-radius: 3em; display: inline-block; }
+.myGreen { background: rgb(179, 255, 217); }
+.myPurple { background: rgb(198, 179, 255); }
+.myBlue { background: 	rgb(179, 236, 255); }
+.myRed { background: 	rgb(255, 179, 179); }
+.myYellow { background: rgb(255, 255, 179); }
+
+.Red {
+  background: red;
+}
+
+li {	
+	margin-bottom: 0.7em;
+	list-style-type:none;
+	
+}
+
+.flashmsg {
+  display: inline-block;
+  border-radius: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 0.3em;
+  padding-top:0.2em;
+  margin: 0.3em;
+}

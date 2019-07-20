@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="<%= route %>/App_Styles.css" rel="stylesheet" type="text/css"/> 		
+</head>
+<body>
+	
+	<div class ="AppContainer"> 
+		<h1> login </h1> 			 
+		
+		<div>
+		
+		<% if ( success_msg ) { %> <div> <%= success_msg %> </div> <% } %>			
+		<% if ( error_msg) { %> <div> <%= error_msg %> </div> <% } %>
+		<% if (error) { %> <div> <%= error %> </div> <% } %>
+		<form method = "post" action="doLoginPlz/">
+			<div class="form-group">
+				<br />
+				<label For = "Email"> Email </label>
+				<input type = "text" id="Email" name ="username" maxLength = "254" autoFocus
+				<% if (Given_Email) { %>
+					value ="<%= Given_Email %>" ></input>
+				<% } else {%>
+					value ="" ></input>
+				<% } %>				
+			</div>		
+			<div class="form-group">
+				<br />
+				<label For ="Password"> Password </label>
+				<input type = "password" id="password" name = "password" maxLength = "21" ></input>
+			</div>						
+		<input type = 'Submit' value = 'Login' readOnly></input>
+		</form>
+		
+		Or
+		
+		<ul>
+		<li><a href ='/doFBLogin'><button>Login With Facebook</button></a></li>
+		<li><a href ='/doLinkedinLogin'><button>Login With Linkedin</button></a></li>
+		<li><a href ='/doGoogleLogin'><button>Login With Google</button></a></li>
+		<li><a href ='/doMSLogin'><button>Login With Microsoft Account</button></a></li>
+		</ul>
+		</div>
+		
+		
+		
+	</div>		 	
+</body>
+</html>
